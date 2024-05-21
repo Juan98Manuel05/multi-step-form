@@ -4,43 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/steps-form.css">
     <title>Responsive Web Developer Starter - devchallenges.io</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
 </head>
 <body>
-    <header>
-        <div class="get-started">Get started by editting <b>index.html</b></div>
-        <img class="logo" src="images/logo.svg" alt="Main Logo">
-    </header>
+    <div class="container-flex">
+        <div class="card">
+            <form>
+                <!-- first step user information -->
+                <div class="container-form-first-section step-1">
+                    <div class="card__header">
+                        <h3> Register </h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="container-input-text">
+                            <label for="">Name</label>
+                            <input type="text" placeholder="enter your name" required>
+                        </div>
+                        <div class="container-input-text">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="example@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="container-input-button">
+                            <button type="button" value="Continue" class="next-step">Continue</button>
+                        </div>
+                    </div>
+                </div>
 
-    <main>
-        <img src="images/devchallenges-logo.svg" alt="A beautiful landscape">
-        <h3 class="title">Responsive Web Developer Starter</h3>
-    </main>
+                <!-- second step topics -->
+                <div class="container-form__second-section step-2 d-none">
+                    <div class="card__header">
+                        <h3> Which topics you are interested in ? </h3>
+                    </div>
+                    <div class="card__body">
+                        <label for="software-development" class="container-input-checkbox">
+                            <input id="software-development" type="checkbox" value="Software Development" required>
+                            Software Development
+                        </label>
+                        <label for="user-experience" class="container-input-checkbox">
+                            <input id="user-experience" type="checkbox" value="User Experience" required>
+                            User Experience
+                        </label>
 
-    <footer>
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Challenges</div>
-            <div class="link-description">Choose a challenge and start learning by building real-life projects.</div>
-        </a>
+                        <label for="graphic-design" class="container-input-checkbox">
+                            <input id="graphic-design" type="checkbox" value="Graphic Design" required>
+                            Graphic Design
+                        </label>
+                    </div>
+                    <div class="card__footer">
+                        <div class="container-input-button">
+                            <button type="button" value="Continue" class="next-step">Continue</button>
+                        </div>
+                    </div>
+                </div>
 
-        <a class="link-card" href="https://devchallenges.io/challenges" target="_blank">
-            <div class="link-title">Solutions</div>
-            <div class="link-description">Checkout how orders solve the challenges, compare with yours and give them feedback.</div>
-        </a>
+                <!-- third step summary -->
+                <div class="container-form__third-section step-3 d-none">
+                    <div class="card__header">
+                        <h3> Summary </h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="summary-user-information">
+                            <p class="color-grey description-summary">Name: <span class="color-white">Name Person</span></p>
+                            <p class="color-grey description-summary">Email: <span class="color-white">Name Person</span></p>
+                        </div>
+                        <div class="summary-topics-information">
+                            <p class="color-grey description-summary">Topics:</p>
+                            <ul>
+                                <li> Example</li>
+                                <li> Example</li>
+                            </ul>
+                        </div>
 
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Blogs</div>
-            <div class="link-description">Checkout devchallenges blogs, tutorials, updates. Find useful resources to get you started.</div>
-        </a>
+                    </div>
+                    <div class="card__footer">
+                        <div class="container-input-button">
+                            <button value="Confirm"  data-confirm="true">Confirm</button>
+                        </div>
+                    </div>
+                </div>
 
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Deploy</div>
-            <div class="link-description">How to deploy and submit your solution.</div>
-        </a>
-       
-    </footer>
 
-    <script src="script.js"></script>
+            </form>
+        </div>
+    </div>
+    <div class="container-flex">
+        <div class="container-steps-form">
+            <span> Stip 1 of 3 </span>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>

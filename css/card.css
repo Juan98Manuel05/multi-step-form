@@ -1,0 +1,108 @@
+.card{
+    border: 1px solid #4D5562;
+    padding: 45px;
+    max-width: 500px;
+    width: 500px;
+    border-radius: 15px;
+    background: #212936;
+}
+
+.card__header h3{
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 19px;
+}
+
+
+.container-input-text label{
+    display: block;
+    font-size: 14px;
+    color: #A1A1A9;
+    font-weight: 400;
+}
+
+.container-input-text input{
+    width: 100%;
+    padding: 16px 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid #4D5562;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container-input-text input:focus-visible{
+    outline: none;
+    border: 2px solid #652CD1;
+}
+
+.container-input-button{
+    text-align: center;
+}
+
+.container-input-button button,
+.container-input-button input[type="submit"], 
+.container-input-button input[type="button"]{
+    padding: 15px 45px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(0deg, rgba(101,44,209,1) 10%, rgba(132,94,238,1) 100%);
+    color: white;
+}
+
+.container-input-button button:hover,
+.container-input-button input[type="submit"]:hover, 
+.container-input-button input[type="button"]:hover{
+    padding: 15px 45px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(0deg, rgba(132,94,238,1) 10%, rgba(101,44,209,1) 100%);
+    color: white;
+}
+
+.card__footer{
+    margin-top: 1.5rem;
+}
+
+.container-input-checkbox{
+    padding: 15px;
+    border: 1px solid #4d5562;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: #A1A1A9;
+    font-size: 14px;
+    display: block;
+    background-color: #394050;
+}
+
+.container-input-checkbox input{
+    display: none;
+}
+
+/* styles for the third step */
+.summary-user-information{
+    margin-bottom: 25px;
+}
+
+.description-summary{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.summary-topics-information ul{
+    padding-inline-start: 20px;
+}
+
+.summary-topics-information ul li{
+    font-size: 16px;
+    color: white;
+}
+
+.color-grey{
+    color: #A1A1A9;
+}
+
+.color-white{
+    color: white;
+}
